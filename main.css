@@ -1,0 +1,298 @@
+/* CSS reset
+(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+
+/* General styles
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
+@font-face {
+    font-family: ferrari;
+    src: url(../ferro-rosso/FerroRosso.ttf);
+}
+
+html {
+    background: rgba(0, 0, 0, 0) url("http://www.picserver.org/images/highway/phrases/learning.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.text {
+    color: #FF4141;
+    padding-bottom: 1rem;
+}
+
+
+/* Header styles
+(all the styles inside the < header > or < nav > tags)
+*/
+
+.heading {
+    font-size: 3rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    text-shadow: 3px 3px 3px black;
+    color: #ff4242;
+    font-family: ferrari;
+}
+
+.heading .logo {
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.heading span {
+    padding-top: 0.5rem;
+}
+
+.start-class-button {
+    background-color: #CAAD6A;
+    border-color: #9e9e9e;
+    border-radius: 30px;
+    border-style: none;
+    /*color: white;*/
+    /*font-size: 1.125rem;*/
+    font-size: 25px;
+    padding: 1rem 1.5rem;
+    text-shadow: none;
+    width: 9.688rem;
+    color: #000000
+}
+
+.start-button:hover {
+    background-color: #707070;
+}
+
+.box1-1 {
+    width: 800px;
+    height: 85px;
+    text-align: center;
+    background-color: #412211;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 35px;
+    opacity: 0.88;
+}
+
+.box1-2 {
+    border: 5px;
+    border-color: black;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    background-color: #824400;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 65px;
+    padding-top: 35px;
+    font-size: 25px;
+    opacity: 0.88;
+}
+
+
+/* Content styles
+(all the styles inside the < sections > or < aside > tags)
+*/
+
+
+/*Made a few additions*/
+
+.start-section,
+.quiz-section {
+    /*.result-section {*/
+    /*    background-image: url("../images/transparent.jpg");*/
+    /*    border-radius: 0.5rem;*/
+    /*    padding: 2rem;*/
+    /*    width: 32rem;*/
+    /*    margin-bottom: 1rem;*/
+    /*    margin-left: auto;*/
+    /*    margin-right: auto;*/
+    border: 5px;
+    border-color: black;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    background-color: #824400;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 65px;
+    padding-top: 35px;
+    font-size: 20px;
+    opacity: 0.88;
+}
+
+.result-section {
+    border: 5px;
+    border-color: black;
+    width: 550px;
+    height: 675px;
+    text-align: left;
+    background-color: #824400;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 65px;
+    padding-top: 35px;
+    font-size: 15px;
+    opacity: 0.88;
+}
+
+#choices {
+    /*color: #ff4141;*/
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 80%;
+}
+
+#choices input.option {
+    margin-right: 1rem;
+}
+
+.question-number {
+    color: #FF4141;
+    padding-top: 1.5rem;
+}
+
+.result-section .text {
+    text-align: center;
+    font-size: 25px;
+}
+
+.result-section .start-button {
+    background-color: #CAAD6A;
+    border-color: #9e9e9e;
+    border-radius: 30px;
+    border-style: none;
+    /*color: white;*/
+    /*font-size: 1.125rem;*/
+    font-size: 25px;
+    padding: 1rem 1.5rem;
+    text-shadow: none;
+    width: 9.688rem;
+    color: #000000;
+    margin: 0 auto;
+    display: block;
+}
+
+.result-section .start-button:hover {
+    background-color: #707070;
+}
+
+#result_msg h3,
+#result_msg h4 {
+    text-align: left;
+    padding-top: 10px;
+    font-size: 1rem;
+    color: wheat;
+    font-weight: 400;
+}
+
+#result_msg h4 {
+    font-size: 0.8rem;
+    padding-top: 3px;
+    padding-bottom: 10px;
+}
+
+
+/* Footer styles
+(all the styles inside the < footer > tag)
+*/
+
+@media only screen and (max-width: 800px) {
+.box1-1 {
+    width: 80%;
+    height: 85px;
+    text-align: center;
+    background-color: #412211;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    opacity: 0.88;
+}
+.box1-2 {
+    border: 5px;
+    border-color: black;
+    width: 40%;
+    height: 100px;
+    text-align: center;
+    background-color: #824400;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 65px;
+    padding-top: 35px;
+    font-size: 17px;
+    opacity: 0.88;
+}
+.start-class-button {
+ 
+    font-size: 17px;
+
+    width: 6.688rem;
+
+}
+.quiz-section {
+     width: 60%;
+    height: 280px;
+    text-align: center;
+
+    font-size: 17px;
+    opacity: 0.88;
+}
+#tryagain {
+    font-size: 17px;
+
+    width: 6.688rem;
+}
+.result-section {
+    width: 70%;
+    height: 500px;
+    text-align: left;
+    background-color: #824400;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 65px;
+    padding-top: 35px;
+    font-size: 12px;
+    opacity: 0.88;
+    overflow: scroll;
+}
+.finalscore {
+    font-size: 12px;
+}
+
+}
+/* Responsive styles
+(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+*/
